@@ -1,10 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
 :root {
-  font-family: "Domine", serif;
+  font: 100%/1.5 "Domine", serif;
   --link-letter-spacing: .1rem;
 }
 
 a {
+  background: rgba(255, 255, 255, .1);
+  border-radius: .25rem;
   color: white;
+  padding: .2rem .4rem;
   text-decoration: none;
 }
 
@@ -13,8 +20,8 @@ a:hover {
 }
 
 .links a {
-  letter-spacing: var(--link-letter-spacing);
   font-variant: small-caps;
+  letter-spacing: var(--link-letter-spacing);
 }
 
 body {
@@ -24,6 +31,8 @@ body {
   display: flex;
   height: 100vh;
   justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 .links a:last-child {
@@ -31,7 +40,7 @@ body {
 }
 
 .logo {
-  width: 40vw;
+  width: 60vw;
 }
 
 main {
