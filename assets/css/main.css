@@ -1,0 +1,47 @@
+:root {
+  font-family: "Domine", serif;
+  --link-letter-spacing: .1rem;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.links a {
+  letter-spacing: var(--link-letter-spacing);
+  font-variant: small-caps;
+}
+
+body {
+  align-items: center;
+  background: #839D81;
+  color: white;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+}
+
+.links a:last-child {
+  margin-left: var(--link-letter-spacing);
+}
+
+.logo {
+  width: 40vw;
+}
+
+main {
+  text-align: center;
+}
+
+main img {
+  margin-bottom: 3em;
+}
+
+h2 {
+  font-variant: small-caps;
+}
