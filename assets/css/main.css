@@ -25,32 +25,87 @@ a:hover {
 }
 
 body {
-  align-items: center;
   background: #839D81;
   color: white;
-  display: flex;
-  height: 100vh;
-  justify-content: center;
   margin: 0;
   padding: 0;
 }
+
+.container {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+
+.index,
+.imprint,
+.gallery {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: center;
+  text-align: center;
+}
+
+.index {
+  gap: 3rem;
+}
+
 
 .links a:last-child {
   margin-left: var(--link-letter-spacing);
 }
 
 .logo {
-  width: 60vw;
+  width: 100%;
 }
 
-main {
-  text-align: center;
-}
-
-main img {
-  margin-bottom: 3em;
-}
-
-h2 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-variant: small-caps;
+  margin: 0;
+  padding: 0;
+}
+
+.v-separator {
+  display: inline;
+}
+
+.h-separator {
+  color: inherit;
+  display: none;
+  width: 3rem;
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .links {
+    flex-direction: column;
+  }
+
+  .h-separator {
+    display: block;
+  }
+
+  .v-separator {
+    display: none;
+  }
+
+  .links a {
+    display: inline-block;
+    text-align: center;
+  }
 }
